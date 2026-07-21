@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Queue — Resource Booking</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-mark">Q</span>
+    <span class="brand-name">Queue</span>
+  </div>
+  <div class="user-switcher">
+    <label for="userSelect">Acting as</label>
+    <select id="userSelect"></select>
+  </div>
+</header>
+
+<main>
+  <section class="intro">
+    <h1>Shared resources, no double-bookings.</h1>
+    <p>Book what's free. Join the line for what's not — you'll be reserved a slot automatically the moment it's returned.</p>
+  </section>
+
+  <section class="board" id="board">
+    <!-- resource cards injected here -->
+  </section>
+
+  <section class="panel">
+    <div class="panel-header">
+      <h2>Your bookings</h2>
+      <span class="hint">Return a resource to free it up for the next person in line.</span>
+    </div>
+    <div id="myBookings" class="booking-list"></div>
+  </section>
+</main>
+
+<div id="toast" class="toast"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
